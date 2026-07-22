@@ -1,0 +1,288 @@
+Great. Here are the remaining Process questions (15–33), tailored for your Lenel OnGuard COTS application.
+
+⸻
+
+Self-Service Catalog Availability
+
+Q15. Is there a formal Incident Command Framework?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Major incidents follow a defined escalation process through ServiceNow, involving Application Support, Infrastructure teams, MSSP, and the vendor. Roles and responsibilities are documented, but a formal enterprise Incident Command System (ICS) with dedicated incident commanders is not fully established.
+
+Evidence
+
+	•	ServiceNow Major Incident Process
+	•	Incident Management SOP
+	•	Escalation Matrix
+
+⸻
+
+RCA, Knowledge Management, KBAs & Runbooks
+
+Q16. Are RCAs producing KB articles and executable runbooks that are versioned and capture evidence?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+RCAs are completed for major incidents, and relevant knowledge articles and runbooks are updated when required. Version control exists through document repositories, but executable automation runbooks are limited.
+
+Evidence
+
+	•	RCA Documents
+	•	Knowledge Base
+	•	Runbooks
+
+⸻
+
+Stakeholder Documentation
+
+Q17. Stakeholder documentation like upstream/downstream/business contacts exists and is updated regularly?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Support contacts, vendor contacts, business stakeholders, and escalation matrices are documented and reviewed periodically. Updates are manual and rely on operational governance processes.
+
+Evidence
+
+	•	Support Contact Matrix
+	•	Service Documentation
+	•	Escalation Matrix
+
+⸻
+
+Q18. Are runbooks discoverable (searchable/linked from alerts/catalog) with reuse metrics?
+
+Current: 1 – Scripted
+Target: 3 – Policy-driven
+
+Justification
+Operational runbooks are stored centrally and available to support teams but are not integrated directly with monitoring alerts or ServiceNow incidents. Usage metrics are not tracked.
+
+Evidence
+
+	•	SharePoint Runbooks
+	•	Operational SOPs
+
+⸻
+
+Troubleshooting Tools Adoption
+
+Q19. Is a standard troubleshooting toolkit adopted (trace/log explorer/profilers/packet capture/lineage) with effectiveness tracked?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+The support team consistently uses Splunk, Vista dashboards, Azure Monitor, MSSP tools, and ServiceNow during investigations. Tool usage is standardized, although effectiveness metrics are not formally measured.
+
+Evidence
+
+	•	Splunk
+	•	Vista Dashboard
+	•	Azure Monitor
+	•	ServiceNow
+
+⸻
+
+Continuous Improvement Culture
+
+Q20. Is there a continuous improvement cadence established with measurable outcomes and leadership visibility?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+Operational review meetings, PIRs, and governance meetings track improvement actions. Leadership reviews service health regularly, although improvement metrics are not fully automated.
+
+Evidence
+
+	•	Service Review Decks
+	•	PIR Reviews
+	•	Governance Meetings
+
+⸻
+
+Unified Backlog across SRE/Ops & Dev
+
+Q21. Do SRE/Ops and Development teams share one backlog with prioritization based on SLO impact & risk?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Operations, vendor, and development teams coordinate enhancement and defect backlogs. Reliability improvements are prioritized based on business impact rather than formal SLO metrics.
+
+Evidence
+
+	•	Azure DevOps/JIRA
+	•	ServiceNow Problem Records
+
+⸻
+
+SRE/Ops Involvement in Development Lifecycle
+
+Q22. Is SRE engaged at design/test/release phases with operability NFRs and policy checks?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Operations participate in CAB reviews, release planning, and production readiness activities. Since this is a vendor-managed COTS application, architecture and design decisions are primarily owned by the vendor.
+
+Evidence
+
+	•	CAB Minutes
+	•	Release Checklist
+
+⸻
+
+Q23. Do you validate failure scenarios and ensure tested runbooks are ready before go-live?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Operational validation and smoke testing are completed before production releases. Failure scenario testing and resilience testing are limited due to vendor-controlled releases.
+
+Evidence
+
+	•	Release Validation Checklist
+	•	UAT Sign-off
+
+⸻
+
+Q24. Are SRE standards enforced via automation?
+
+Current: 1 – Scripted
+Target: 3 – Policy-driven
+
+Justification
+Operational standards exist and are documented. Some deployment and monitoring checks are scripted, but automated policy enforcement is limited.
+
+Evidence
+
+	•	Deployment SOP
+	•	Monitoring Standards
+
+⸻
+
+Q25. Is there a central SRE function guiding teams?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Application Support, Platform Operations, MSSP, and Vendor Support collectively provide operational governance. A dedicated enterprise SRE organization is still evolving.
+
+Evidence
+
+	•	Operating Model
+	•	Support Organization
+
+⸻
+
+Blameless Culture
+
+Q26. Do Incident/PIR templates enforce blamelessness and system learning, with psychological safety surveyed?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+PIRs focus on identifying process improvements and preventive actions rather than assigning blame. Psychological safety surveys are not currently part of the incident review process.
+
+Evidence
+
+	•	PIR Documents
+	•	Problem Reviews
+
+⸻
+
+Skills & Trainings
+
+Q27. Are role-based training paths and certification targets defined?
+
+Current: 1 – Scripted
+Target: 2 – Standardized
+
+Justification
+Operational staff complete mandatory organizational and vendor training. Formal SRE certification paths and structured learning plans are not currently defined.
+
+Evidence
+
+	•	Training Matrix
+	•	LMS Records
+
+⸻
+
+On-demand Provisioning Automation
+
+Q28. Is provisioning automated via golden modules/images with drift detection and auto-correction?
+
+Current: 1 – Scripted
+Target: 2 – Standardized
+
+Justification
+Infrastructure deployment follows standard build procedures and templates where applicable. Automated drift detection and self-healing capabilities are limited.
+
+Evidence
+
+	•	Infrastructure SOP
+	•	Azure Build Documentation
+
+⸻
+
+Toil Identification, Value-Based Prioritization & Continuous Reduction
+
+Q29. Is toil measured (minutes/team/week) with top 20% tasks automated first for ROI?
+
+Current: 1 – Scripted
+Target: 2 – Standardized
+
+Justification
+Manual operational effort is identified during service reviews and automation opportunities are discussed. Formal toil measurement and ROI tracking are not implemented.
+
+Evidence
+
+	•	Service Improvement Backlog
+	•	Operational Review Minutes
+
+⸻
+
+Q30. Are automation benefits (MTTR/toil/cost) tracked and reinvested via continuous improvement?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Automation initiatives focus on reducing manual effort and improving operational efficiency. Benefits are reviewed qualitatively but not consistently measured through defined KPIs.
+
+Evidence
+
+	•	Automation Backlog
+	•	Service Improvement Plan
+
+⸻
+
+Q31. Are incentives aligned with reliability outcomes?
+
+Current: 1 – Scripted
+Target: 2 – Standardized
+
+Justification
+Operational reliability is included in team objectives and service improvement initiatives. However, there are no formal incentive programs directly linked to SRE reliability metrics.
+
+Evidence
+
+	•	Team Objectives
+	•	Operational KPIs
+
+⸻
+
+These responses are deliberately conservative and aligned with a vendor-managed COTS application. They reflect the operational maturity you’ve described without overstating automation or SRE capabilities, making them appropriate for an audit or management review.
