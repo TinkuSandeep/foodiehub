@@ -1,0 +1,230 @@
+PROCESS SHEET
+
+1. Automated Incident Analysis & Management
+
+Q1. What % of incidents are detected and resolved preemptively through AIOps automation before users get impacted?
+
+Current: 1 – Scripted
+Target: 3 – Policy-driven
+
+Justification
+The application uses MSSP monitoring, Vista dashboards, and Splunk for proactive monitoring. While alerts are generated automatically, incident resolution still requires manual investigation by the support team. Full AIOps-based prediction and automated resolution are not implemented.
+
+Evidence
+
+	•	MSSP Monitoring
+	•	Vista Dashboard
+	•	Splunk
+	•	ServiceNow Incidents
+
+⸻
+
+Q2. How is auto-remediation of issues handled? Do auto-remediation playbooks enforce blast-radius limits, deployment checks, and auto-rollback?
+
+Current: 1 – Scripted
+Target: 3 – Policy-driven
+
+Justification
+Basic automation exists for infrastructure monitoring and alerting. Application recovery activities are primarily manual because Lenel OnGuard is a vendor-managed COTS application. Automated rollback and self-healing mechanisms are limited.
+
+Evidence
+
+	•	MSSP SOPs
+	•	ServiceNow
+	•	Vendor Runbooks
+
+⸻
+
+Q3. Are preemptive incidents annotated back (feedback) to change records and PIRs?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Major incidents and production issues are linked to Problem Records and Change Requests within ServiceNow. Feedback is captured during PIRs but is not automatically synchronized between monitoring tools and change records.
+
+Evidence
+
+	•	ServiceNow Change Records
+	•	PIR Documents
+
+⸻
+
+Q4. Are postmortems used to identify systemic failures?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+Post Incident Reviews are conducted for major incidents to identify root causes and preventive actions. Action items are tracked manually and reviewed during operational governance meetings.
+
+Evidence
+
+	•	PIR Documents
+	•	Problem Management Records
+
+⸻
+
+Incident Volumes by Priority & Coverage
+
+Q5. Are incident volumes by priority/service tracked with SLO impact and month-over-month targets?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+Incident trends, priority distribution, and service health are monitored through ServiceNow reporting and operational dashboards. Formal SLO-based trending is partially implemented but not fully automated.
+
+Evidence
+
+	•	ServiceNow Reports
+	•	Operational Dashboards
+
+⸻
+
+Q6. Is 24x7 coverage (or follow-the-sun) defined with clear handoffs?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+The application is supported through 24×7 operational support using MSSP, vendor support, and on-call teams. Standard shift handover procedures exist.
+
+Evidence
+
+	•	Support Roster
+	•	On-call Schedule
+	•	MSSP Support Model
+
+⸻
+
+Incident Review Process
+
+Q7. Are blameless post-incident reviews completed within SLA with actions tracked?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Major incidents undergo structured PIR reviews focusing on process improvements and preventive actions. Action items are monitored through Problem Management.
+
+Evidence
+
+	•	PIR Reports
+	•	Problem Records
+
+⸻
+
+Q8. Do post incident reviews update knowledge articles and runbooks?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Knowledge articles and operational runbooks are updated after significant incidents when operational improvements are identified. This process is manual.
+
+Evidence
+
+	•	Knowledge Base
+	•	Runbooks
+
+⸻
+
+Change Management
+
+Q9. Are risk scoring, test cycle checks, SLO burn checks, and security scans enforced?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+Changes follow CAB approval, vendor testing, and production validation. Risk assessments are completed manually. Automated SLO burn-rate validation is not implemented.
+
+Evidence
+
+	•	CAB Minutes
+	•	Change Records
+
+⸻
+
+Q10. Do pipeline/platform changes follow governed rollout with rollback and audit logs?
+
+Current: 3 – Policy-driven
+Target: 4 – Automated
+
+Justification
+Production deployments follow approved change processes with documented rollback plans and audit trails. Release automation is limited because the application is vendor managed.
+
+Evidence
+
+	•	Change Records
+	•	Deployment SOP
+
+⸻
+
+Problem Management
+
+Q11. Is the problem backlog ranked by impact?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Problem records are prioritized according to business impact, recurrence, and severity. Formal reliability-based prioritization is evolving.
+
+Evidence
+
+	•	Problem Backlog
+	•	ServiceNow
+
+⸻
+
+Q12. Are issue trends categorized to drive systemic fixes?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Recurring issues are analyzed and grouped during Problem Management reviews. Long-term corrective actions are tracked manually.
+
+Evidence
+
+	•	Problem Reviews
+	•	Trend Reports
+
+⸻
+
+Deployment Management
+
+Q13. Are deployments automated with pipelines?
+
+Current: 2 – Standardized
+Target: 3 – Policy-driven
+
+Justification
+Vendor deployment procedures follow standardized release processes. CI/CD automation is limited for the COTS application.
+
+Evidence
+
+	•	Release Documentation
+	•	CAB Records
+
+⸻
+
+Q14. Do releases use Canary/Blue-Green deployments?
+
+Current: 1 – Scripted
+Target: 2 – Standardized
+
+Justification
+Standard production deployment procedures are followed. Canary or Blue-Green deployment strategies are not currently implemented for the vendor application.
+
+Evidence
+
+	•	Deployment SOP
+
+⸻
+
+These are the first 14 Process questions completed in the format you need.
+
+The remaining questions (Self-Service Catalog, RCA/Knowledge Management, Stakeholder Documentation, Troubleshooting Tools, Continuous Improvement, Unified Backlog, SRE Lifecycle, Blameless Culture, Skills & Training, Provisioning Automation, and Toil Reduction) are of similar length. Since all 33 won’t fit in a single response, I can continue with Questions 15–33 in the same format in the next message.
